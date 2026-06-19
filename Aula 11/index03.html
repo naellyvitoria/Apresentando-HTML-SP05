@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Aula 11 HTML</title>
+</head>
+<body>
+  
+  <!-- Utilizando o JavaScript no HTML-->
+
+  <h2>Exemplo de JavaScript no HTML</h2>
+
+  <button onclick="document.getElementById('elm1').innerHTML = Date()">Clique aqui</button>
+
+  <p id="elm1"></p>
+
+  <!-- Utilizando o JavaScript para alterar estilos de elementos -->
+
+  <h2>Exemplo de alteração em estilos de elementos com o JavaScript</h2>
+
+  <p id="elm2">Somente a dor coletiva gera união.</p>
+
+  <button onclick="alterarEstilo()">Altere o elemento</button>
+
+  <hr>
+
+  <!-- Utilizando a tag noscript como conteúdo alternativo -->
+
+  <h2>Exmemplo com a tag noscript</h2>
+
+  <noscript>Desculpe, o seu navegador não suporta o JavaScript.</noscript>
+
+  <script>
+
+    function alterarEstilo() {
+      document.querySelector("#elm2").style.fontSize = "28px";
+      document.querySelector("#elm2").style.color = "darkred";
+      document.querySelector("#elm2").style.backgroundColor = "black";
+      document.querySelector("#elm2").style.fontWeight = "bold";
+    }
+
+  </script>
+
+</body>
+</html>

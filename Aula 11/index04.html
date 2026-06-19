@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Aula 11 HTML</title>
+</head>
+<body>
+  
+  <!-- Utilizando o JavaScript para alterar atributos do HTML -->
+
+  <h2>Exemplo de atributo em HTML alterado pelo JavaScript</h2>
+
+  <img src="lamp-apagada.gif" width="100" height="180" id="lampada">
+
+  <br>
+
+  <button onclick="interruptorLampada(1)">Acender</button>
+  <button onclick="interruptorLampada(0)">Apagar</button>
+
+  <script>
+
+    function interruptorLampada(estado) {
+      
+      var imagemLampada;
+      
+      if (estado == 0) {
+        imagemLampada = "lamp-apagada.gif";
+      } else {
+        imagemLampada = "lamp-acesa.gif";
+      }
+
+      document.getElementById("lampada").src = imagemLampada;
+
+    }
+
+  </script>
+
+</body>
+</html>
