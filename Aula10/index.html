@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Aula 10 HTML</title>
+
+  <style>
+
+    div {
+      background-color: darkorange;
+      /* width: 300px; */
+      /* margin: auto; */
+    }
+
+    .div-principal {
+      width: 100%;
+      overflow: auto;
+      background-color: transparent;
+    }
+
+    .div-principal div {
+      width: 33%;
+      float: left;
+    }
+
+    .div-mae {
+      width: 100%;
+      overflow: auto;
+      background-color: transparent;
+    }
+
+    .div-mae div {
+      width: 30%;
+      display: inline-block;
+    }
+
+    .div-pai {
+      display: flex;
+      background-color: transparent;
+    }
+
+    .div-pai div {
+      width: 33%;
+    }
+
+    .grid-container {
+      display: grid;
+      background-color: transparent;
+      grid-template-columns: 33% 33% 33%;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <!-- Exemplos de div no HTML -->
+
+  <h2>Utilizando div no HTML</h2>
+
+  <div>
+    <h3>Isso é um h3</h3>
+    <p>Somente a dor coletiva gera união.</p>
+    <p>Somente a dor coletiva gera união.</p>
+  </div>
+
+  <p>O travesseiro da tranquilidade existe, mas nem todos podem deitar sobre ele.</p>
+
+  <hr>
+
+  <!-- Exemplo de várias divs no HTML -->
+
+  <div style="background-color: darkmagenta;">
+    <h3>São Paulo</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ab, deserunt incidunt quod ex aut! At nemo itaque, voluptate deleniti ratione dicta, culpa cumque rem quasi sequi exercitationem est expedita.</p>
+  </div>
+
+  <div style="background-color: darkolivegreen;">
+    <h3>Rio de Janeiro</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corrupti quisquam rerum repudiandae nobis eos iure necessitatibus corporis, dolores ex, perferendis excepturi expedita a autem voluptas sequi nulla totam odit?</p>
+  </div>
+
+  <div style="background-color: greenyellow;">
+    <h3>Belo Horizonte</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, vel! Ea similique autem qui tenetur rerum ut harum laborum? Commodi eligendi quas, nulla ut unde velit aperiam vel pariatur rem!</p>
+  </div>
+
+  <hr>
+
+  <!-- Alinhando divs (lado a lado) -->
+  
+  <h2>Exemplo de alinhamento entre divs</h2>
+
+  <div class="div-principal">
+
+    <div style="background-color: orangered;">
+      <h3>Laranja</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius inventore cupiditate libero non velit ut distinctio modi hic officia saepe, id animi molestias debitis odit! Repellat tenetur dolor non.</p>
+    </div>
+
+    <div style="background-color: darkred;">
+      <h3>Morango</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A cupiditate quis quod minima ex consectetur, iste reiciendis nam, magnam facere eveniet similique saepe assumenda deleniti sequi vero veniam adipisci molestiae.</p>
+    </div>
+
+    <div style="background-color: yellow;">
+      <h3>Abacaxi</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur, dolores reiciendis facilis voluptatibus adipisci modi exercitationem cupiditate sapiente maiores impedit ex explicabo placeat cum, est non fugit repudiandae voluptas.</p>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="div-mae">
+
+    <div style="background-color: orangered;">
+      <h3>Laranja</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius inventore cupiditate libero non velit ut distinctio modi hic officia saepe, id animi molestias debitis odit! Repellat tenetur dolor non.</p>
+    </div>
+
+    <div style="background-color: darkred;">
+      <h3>Morango</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A cupiditate quis quod minima ex consectetur, iste reiciendis nam, magnam facere eveniet similique saepe assumenda deleniti sequi vero veniam adipisci molestiae.</p>
+    </div>
+
+    <div style="background-color: yellow;">
+      <h3>Abacaxi</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur, dolores reiciendis facilis voluptatibus adipisci modi exercitationem cupiditate sapiente maiores impedit ex explicabo placeat cum, est non fugit repudiandae voluptas.</p>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="div-pai">
+
+    <div style="background-color: grey;">
+      <h3>Cinza</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas modi quo voluptates fugiat, reiciendis ullam. Totam sit ipsa, voluptate aperiam quidem vero nostrum tempora magni similique ipsam harum autem unde?</p>
+    </div>
+
+    <div style="background-color: darkorchid;">
+      <h3>Roxo</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet unde possimus aut dolorem maxime libero, commodi vitae? Distinctio, enim! Deleniti beatae ex vitae itaque quis voluptatum laudantium fugit consectetur perferendis!</p>
+    </div>
+
+    <div style="background-color: cornflowerblue;">
+      <h3>Azul</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus earum hic ipsum soluta tempora eum laudantium fugit, facilis reiciendis exercitationem dolores fuga numquam facere nam vel. Qui, alias dignissimos.</p>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="grid-container">
+
+    <div style="background-color: aquamarine;">
+      <h3>Titulo 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci animi optio est sunt odio minus dolore modi, amet libero architecto, consectetur accusamus voluptatum minima suscipit! Itaque id sint rem.</p>
+    </div>
+
+    <div style="background-color: pink;">
+      <h3>Titulo 2</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda labore explicabo nesciunt corporis veniam unde? Exercitationem rerum suscipit sed magni, consequuntur quam! Eaque suscipit impedit, maiores unde veniam quam numquam!</p>
+    </div>
+
+    <div style="background-color:cadetblue;">
+      <h3>Titulo 3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laborum optio soluta doloremque cupiditate maxime dicta accusantium totam minima, voluptates expedita hic odio accusamus obcaecati distinctio dolor repudiandae vel. Consectetur!</p>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

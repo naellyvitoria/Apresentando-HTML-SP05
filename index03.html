@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Aula 10 HTML</title>
+
+  <style>
+
+    #id-h2 {
+      background-color: darkgreen;
+      border: 4px solid #ad7731;
+      color:burlywood;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .class-h2 {
+      background-color: crimson;
+      color: coral;
+      border: 3px solid tomato;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <!-- Exemplos de utilização do atributo id no HTML -->
+
+  <h1>Exemplos de elemento com id</h1>
+
+  <h2 id="id-h2">Esse elemento contém um id</h2>
+
+  <h2 class="class-h2">Esse elemento contém uma classe (class)</h2>
+
+  <hr>
+
+  <!-- Exemplo de id com o JavaScript -->
+
+  <h2 id="elemento-h2">Olá mundo!</h2>
+  <button onclick="alterarConteudo()">Clique aqui</button>
+
+  <script>
+
+    function alterarConteudo() {
+      document.getElementById("elemento-h2").innerHTML = "Somente a dor coletiva gera união!";
+    }
+
+  </script>
+
+</body>
+</html>
